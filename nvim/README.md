@@ -4,9 +4,16 @@
 
 ## Install
 
+macOS
 ```
 brew install neovim
 
+ln -s $PWD ~/.config/nvim
+```
+
+Fedora
+```
+sudo dnf install -y neovim python3-neovim
 ln -s $PWD ~/.config/nvim
 ```
 
