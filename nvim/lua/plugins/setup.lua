@@ -64,7 +64,7 @@ return require("packer").startup(function()
   use "williamboman/nvim-lsp-installer"     -- https://github.com/williamboman/nvim-lsp-installer
   use "numToStr/Comment.nvim"               -- https://github.com/numToStr/Comment.nvim
   use { "kylechui/nvim-surround", tag = "*" }  -- https://github.com/kylechui/nvim-surround
-
+  use "windwp/nvim-autopairs" -- https://github.com/windwp/nvim-autopairs
   if packer_bootstrap then
     require("packer").sync()
   end
