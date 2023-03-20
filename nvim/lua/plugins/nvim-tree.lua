@@ -35,7 +35,7 @@ nvimtree.setup({
   },
   renderer = {
     indent_width = 1,
-    highlight_opened_files = "all",
+    highlight_opened_files = "name",
   },
 })
 
