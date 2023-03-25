@@ -29,3 +29,20 @@ go install golang.org/x/tools/gopls@latest
 ```
 brew install pyright
 ```
+
+## Enable GitHub Copilot in Neovim
+* [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-neovim)
+```
+git clone https://github.com/github/copilot.vim \
+   ~/.config/nvim/pack/github/start/copilot.vim
+```
+
+* Configure GitHub Copilot
+```
+:Copilot setup
+```
+
+* Enable GitHub Copilot
+```
+:Copilot enable
+```
