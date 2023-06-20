@@ -67,6 +67,7 @@ return require("packer").startup(function()
   use "windwp/nvim-autopairs"               -- https://github.com/windwp/nvim-autopairs
   use "mfussenegger/nvim-dap"               -- https://github.com/mfussenegger/nvim-dap
   use "leoluz/nvim-dap-go"                  -- https://github.com/leoluz/nvim-dap-go
+  use "vijaymarupudi/nvim-fzf"              -- https://github.com/vijaymarupudi/nvim-fzf
   if packer_bootstrap then
     require("packer").sync()
   end
