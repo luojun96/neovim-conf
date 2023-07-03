@@ -68,6 +68,7 @@ return require("packer").startup(function()
   use "mfussenegger/nvim-dap"               -- https://github.com/mfussenegger/nvim-dap
   use "leoluz/nvim-dap-go"                  -- https://github.com/leoluz/nvim-dap-go
   use "vijaymarupudi/nvim-fzf"              -- https://github.com/vijaymarupudi/nvim-fzf
+  use "ctrlpvim/ctrlp.vim"                  -- https://github.com/ctrlpvim/ctrlp.vim
   if packer_bootstrap then
     require("packer").sync()
   end
