@@ -4,9 +4,13 @@
 
 - [Install Nerd Fonts](#install-nerd-fonts)
 - [Install Neovim](#install-neovim)
-- [Install Language Server Protocol Implementations](#install-language-server-protocol-implementations)
 - [Configure Plugins](#configure-plugins)
-- [Enable GitHub Copilot in Neovim](#enable-github-copilot-in-neovim)
+  - [Setup Plugins](#setup-plugins)
+  - [Install GitHub Copilot in Neovim](#install-github-copilot-in-neovim)
+    - [Load Copliot Submodule](#load-copliot-submodule)
+    - [Configure Copliot in Neovim](#configure-copliot-in-neovim)
+    - [Enable GitHub Copilot in Neovim](#enable-github-copilot-in-neovim)
+- [Install Language Server Protocol Implementations](#install-language-server-protocol-implementations)
 - [References](#references)
 
 # Install Nerd Fonts
@@ -21,36 +25,27 @@ We can install neovim from its website <https://neovim.io/>, or install it from 
 
 ```bash
 brew install neovim
-
-ln -s $PWD/nvim ~/.config/nvim
 ```
 
 - Fedora
 
 ```bash
 sudo dnf install -y neovim python3-neovim
-ln -s $PWD/nvim ~/.config/nvim
-```
-
-# Install Language Server Protocol Implementations
-
-- [Go: gopls](https://github.com/golang/tools/tree/master/gopls)
-  
-```bash
-go install golang.org/x/tools/gopls@latest
-```
-
-- [Python](https://github.com/microsoft/pyright)
-
-```bash
-brew install pyright
 ```
 
 # Configure Plugins
 
-The installed plugins are listed in `nvim/init.lua` file.
+## Setup Plugins
 
-Installed plugins are listed as below:
+```bash
+git clone https://github.com/luojun96/neovim-conf
+cd neovim-conf
+ln -s $PWD/nvim ~/.config/nvim
+```
+
+The main installed plugins are listed in `nvim/init.lua` file.
+
+Installed plugins are listed as below by running `PackerStatus` in Neovim:
 
 - Comment.nvim
 - barbar.nvim
@@ -82,25 +77,39 @@ Installed plugins are listed as below:
 - vim-clang-format
 - vim-go
 
-# Enable GitHub Copilot in Neovim
+## Install GitHub Copilot in Neovim
 
-- Download [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-neovim)
+### Load Copliot Submodule
 
 ```bash
-git clone https://github.com/github/copilot.vim \
-   ~/.config/nvim/pack/github/start/copilot.vim
+git submodule init
+git submodule update
 ```
 
-- Configure GitHub Copilot in Neovim
+### Configure Copliot in Neovim
 
 ```bash
 :Copilot setup
 ```
 
-- Enable GitHub Copilot in Neovim
+### Enable GitHub Copilot in Neovim
 
 ```bash
 :Copilot enable
+```
+
+# Install Language Server Protocol Implementations
+
+- [Go: gopls](https://github.com/golang/tools/tree/master/gopls)
+  
+```bash
+go install golang.org/x/tools/gopls@latest
+```
+
+- [Python](https://github.com/microsoft/pyright)
+
+```bash
+brew install pyright
 ```
 
 # References
