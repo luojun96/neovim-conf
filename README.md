@@ -50,7 +50,7 @@ brew install pyright
 
 The installed plugins are listed in `nvim/init.lua` file.
 
-Installed plugins are list as below:
+Installed plugins are listed as below:
 
 - Comment.nvim
 - barbar.nvim
@@ -84,7 +84,7 @@ Installed plugins are list as below:
 
 # Enable GitHub Copilot in Neovim
 
-- Download Copliot [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-neovim)
+- Download [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-neovim)
 
 ```bash
 git clone https://github.com/github/copilot.vim \
