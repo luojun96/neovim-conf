@@ -69,6 +69,14 @@ return require("packer").startup(function()
   use "leoluz/nvim-dap-go"                  -- https://github.com/leoluz/nvim-dap-go
   use "vijaymarupudi/nvim-fzf"              -- https://github.com/vijaymarupudi/nvim-fzf
   use "ctrlpvim/ctrlp.vim"                  -- https://github.com/ctrlpvim/ctrlp.vim
+  use "nvim-lua/plenary.nvim"               -- https://github.com/nvim-lua/plenary.nvim
+  use {
+    "olexsmir/gopher.nvim",                 -- https://github.com/olexsmir/gopher.nvim
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+  }
   if packer_bootstrap then
     require("packer").sync()
   end
