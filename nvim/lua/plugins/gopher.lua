@@ -5,7 +5,7 @@ gopher.setup({
     commands = {
         go = "go",
         gomodifytags = "gomodifytags",
-        gotests = "~/go/bin/gotests",
+        gotests = "gotests",
         impl = "impl",
         iferr = "iferr",
     },
