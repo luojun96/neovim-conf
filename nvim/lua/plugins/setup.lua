@@ -67,11 +67,17 @@ return require("packer").startup(function()
   use "windwp/nvim-autopairs"               -- https://github.com/windwp/nvim-autopairs
   use "mfussenegger/nvim-dap"               -- https://github.com/mfussenegger/nvim-dap
   use {
-    "leoluz/nvim-dap-go",                  -- https://github.com/leoluz/nvim-dap-go
+    "leoluz/nvim-dap-go",                   -- https://github.com/leoluz/nvim-dap-go 
     requires = {
-      "mfussenegger/nvim-dap",
-    } 
+      "mfussenegger/nvim-dap",  
+    },
   }
+  use { 
+    "rcarriga/nvim-dap-ui",                 -- https://github.com/rcarriga/nvim-dap-ui
+    requires = { 
+      "mfussenegger/nvim-dap"
+    },
+  } 
   use "vijaymarupudi/nvim-fzf"              -- https://github.com/vijaymarupudi/nvim-fzf
   use "ctrlpvim/ctrlp.vim"                  -- https://github.com/ctrlpvim/ctrlp.vim
   use "nvim-lua/plenary.nvim"               -- https://github.com/nvim-lua/plenary.nvim
