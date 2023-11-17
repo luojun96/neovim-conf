@@ -88,6 +88,7 @@ return require("packer").startup(function()
       "nvim-treesitter/nvim-treesitter",
     },
   }
+  use "ellisonleao/glow.nvim"               -- https://github.com/ellisonleao/glow.nvim
   if packer_bootstrap then
     require("packer").sync()
   end
