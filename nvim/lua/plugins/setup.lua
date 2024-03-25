@@ -72,10 +72,12 @@ return require("packer").startup(function()
       "mfussenegger/nvim-dap",  
     },
   }
+  use "nvim-neotest/nvim-nio"               -- https://github.com/nvim-neotest/nvim-nio
   use { 
     "rcarriga/nvim-dap-ui",                 -- https://github.com/rcarriga/nvim-dap-ui
     requires = { 
-      "mfussenegger/nvim-dap"
+      "mfussenegger/nvim-dap",
+      "nvim-neotest/nvim-nio"
     },
   } 
   use "vijaymarupudi/nvim-fzf"              -- https://github.com/vijaymarupudi/nvim-fzf
