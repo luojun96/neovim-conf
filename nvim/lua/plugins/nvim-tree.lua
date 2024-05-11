@@ -5,8 +5,8 @@ vim.cmd([[
   nnoremap - :NvimTreeToggle<CR>
 ]])
 
--- local keymap = vim.keymap -- for conciseness
--- keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+local keymap = vim.keymap -- for conciseness
+keymap.set("n", "<leader>~", ":NvimTreeFindFile<CR>") -- toggle file explorer
 
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
@@ -28,7 +28,7 @@ nvimtree.setup({
   view = {
     relativenumber = false,
     side = "left",
-    width = 30,
+    width = 35,
   },
   filters = {
     custom = { "^.git$" },
